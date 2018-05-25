@@ -25,5 +25,5 @@
  
  #How to use:<br/>
     *) Download the code<br/>
-    *) Rename it to <calculator><br/>
+    *) Rename it to (calculator)<br/>
     *) Open it with any browser<br/>
