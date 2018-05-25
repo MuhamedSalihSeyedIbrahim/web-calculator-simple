@@ -2,28 +2,28 @@
    Simple Calculator coded to understand the basic concepts in language JavaScript
 
 #Desctiption:<br/>
-  simple calcuator webapp
+  simple calcuator webapp<br/>
   
 #functionalities<br/>
-  Arthematic operation
+  Arthematic operation<br/>
   
 #Requirements:<br/>
-  *) 512 Mb RAM | 1GB ROM
-  *) Browser- Chrome|Firefox|IE
+  *) 512 Mb RAM | 1GB ROM<br/>
+  *) Browser- Chrome|Firefox|IE<br/>
  
 #Technology Stack<br/>
-  Fornt End:
-    *) HTML
-    *) CSS
-    *) JavaScript
+  Fornt End:<br/>
+    *) HTML<br/>
+    *) CSS<br/>
+    *) JavaScript<br/>
 
 #concept:<br/>
-  *)Event listener
-  *)DOM basic understanding
-  *)OOPS in Javascript
-  *)Prototypes in Javascript
+  *) Event listener<br/>
+  *) DOM basic understanding<br/>
+  *) OOPS in Javascript<br/>
+  *) Prototypes in Javascript<br/>
  
  #How to use:<br/>
-    *) Download the code
-    *) Rename it to <calculator>
-    *) Open it with any browser
+    *) Download the code<br/>
+    *) Rename it to <calculator><br/>
+    *) Open it with any browser<br/>
