@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calcuator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      #screen
+      {
+          width:82%;
+      }
+      button
+      {
+          width:20%;
+          height:10%; 
+      }
+  </style>
+ </head>
+    <body onload="calc.winre()">
+        <div>
+            <textarea id="screen"></textarea>
+            <br>
+               
+               <button onclick="calc.o()">1</button>
+               <button onclick="calc.tw()">2</button>
+               <button onclick="calc.th()">3</button>&emsp;
+               <button onclick="calc.val('+')">+</button>
+                <br>
+               <button onclick="calc.fo()">4</button>
+               <button onclick="calc.fi()">5</button>
+               <button onclick="calc.s()">6</button>&emsp;
+               <button onclick="calc.val('*')">*</button>
+               <br>
+               <button onclick="calc.se()">7</button>
+               <button onclick="calc.e()">8</button>
+               <button onclick="calc.n()">9</button>&emsp;
+               <button onclick="calc.val('/')">/</button>
+               <br>
+               <button onclick="calc.cl()">clear</button>
+               <button onclick="calc.z()">0</button>
+               <button onclick="calc.ass()">=</button>&emsp; 
+               <button onclick="calc.val('%')">%</button>
+                   
+                    
+        </div>
+    
+    
+    <script>
+        var calc={ varr:"",a:"",b:"",t:"",ans:"",it:0,
+            //numbers
+            z:function zero(){this.t+="0";this.dis(this.t); },
+            o:function one(){this.t+="1";this.dis(this.t);},
+            tw:function two(){this.t+="2";this.dis(this.t);},
+            th:function three(){this.t+="3";this.dis(this.t);},
+            fo:function four(){this.t+="4";this.dis(this.t);},
+            fi:function five(){this.t+="5";this.dis(this.t);},
+            s:function six(){this.t+="6";this.dis(this.t);},
+            se:function seven(){this.t+="7";this.dis(this.t);},
+            e:function eight(){this.t+="8";this.dis(this.t);},
+            n:function nine(){this.t+="9";this.dis(this.t);},
+            //functions
+            val:function val_set(r)
+                {   
+                    this.varr=r;
+                    this.b=this.t;
+                    this.t="";
+                    document.getElementById("screen").value="";
+                },
+            add:function add()
+                {this.it++;
+                    this.ans=parseInt(this.a)+parseInt(this.b);
+                    this.dis(this.ans); 
+                    if(this.it)
+                    {
+                    this.t=document.getElementById("screen").value;    
+                    }
+                    
+                },
+            ass:function as()
+                {
+                    this.a=this.t;
+                    switch (this.varr)
+                    {  
+                    case "+" :
+                        {this.add(); break;}
+                    case "*" :    
+                        {this.mul(); break;}
+                    case "/" :
+                         {this.div();break;}
+                    case "%":
+                        {this.mod();break;}
+                    }
+                },
+           
+            mul:function mul()
+                {this.it++;
+                    this.ans=parseInt(this.a)*parseInt(this.b);
+                    this.dis(this.ans); 
+                if(this.it)
+                    {
+                    this.t=document.getElementById("screen").value;    
+                    }
+                },
+            div:function div()
+                {this.it++;
+                    this.ans=parseInt(this.b)/parseInt(this.a);
+                    this.dis(this.ans); 
+                if(this.it)
+                    {
+                    this.t=document.getElementById("screen").value;    
+                    }
+                },
+            mod:function mod()
+                {this.it++;
+                    this.ans=parseInt(this.b)%parseInt(this.a);
+                    this.dis(this.ans); 
+                if(this.it)
+                    {
+                    this.t=document.getElementById("screen").value;    
+                    }
+                },
+    
+    // =,clear option
+            dis:function disp(v) 
+            {
+                document.getElementById("screen").value=v;
+                this.a=document.getElementById("screen").value;
+            },
+            cl:function clear()
+            {
+                this.t="";this.a="";this.b="";
+                document.getElementById("screen").value="";
+            },
+            infocus:function foc()
+            {
+                document.getElementById("screen").focus();
+            },
+            winre:function resizeWinBy()
+            {
+                window.resizeTo(
+                window.screen.availWidth / 2,
+                window.screen.availHeight / 2
+                                );
+            }
+            
+               
+    };
+    
+      </script>
+    
+    </body>
+</html>
