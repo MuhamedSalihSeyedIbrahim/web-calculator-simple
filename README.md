@@ -1,7 +1,7 @@
 # Web-Simple-calculator
    Simple Calculator coded to understand the basic concepts in language JavaScript
 
-#Desctiption:
+#Desctiption:<br/>
   simple calcuator webapp
   
 #functionalities
